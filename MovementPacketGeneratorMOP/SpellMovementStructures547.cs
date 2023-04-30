@@ -89,7 +89,6 @@ namespace MovementPacketGeneratorMOP
             MovementStatusElements.MSEEnd
         };
 
-
         [ClientPacket("CMSG_USE_ITEM")]
         public MovementStatusElements[] UseItem = new[]
         {
@@ -165,6 +164,85 @@ namespace MovementPacketGeneratorMOP
             MovementStatusElements.MSEGuidByte5,
             MovementStatusElements.MSEGuidByte0,
             MovementStatusElements.MSEPositionX,
+
+            MovementStatusElements.MSEEnd
+        };
+
+        [ClientPacket("CMSG_PET_CAST_SPELL")]
+        public MovementStatusElements[] PetCastSpell = new[]
+        {
+            MovementStatusElements.MSERemoteTimeValid,
+            MovementStatusElements.MSEHasGuidByte0,
+            MovementStatusElements.MSEHasPitch,
+            MovementStatusElements.MSEHasGuidByte2,
+            MovementStatusElements.MSEHasGuidByte3,
+            MovementStatusElements.MSEHasOrientation,
+            MovementStatusElements.MSEHasSplineElevation,
+            MovementStatusElements.MSEHeightChangeFailed,
+            MovementStatusElements.MSEHasMovementFlags2,
+            MovementStatusElements.MSEHasGuidByte4,
+            MovementStatusElements.MSEHasTransportData,
+            MovementStatusElements.MSEHasGuidByte1,
+            MovementStatusElements.MSEHasRemoveForcesIDs,
+            MovementStatusElements.MSEHasTransportGuidByte2,
+            MovementStatusElements.MSEHasTransportGuidByte5,
+            MovementStatusElements.MSEHasTransportGuidByte6,
+            MovementStatusElements.MSEHasTransportGuidByte0,
+            MovementStatusElements.MSEHasTransportTime2,
+            MovementStatusElements.MSEHasTransportGuidByte1,
+            MovementStatusElements.MSEHasTransportGuidByte7,
+            MovementStatusElements.MSEHasTransportGuidByte4,
+            MovementStatusElements.MSEHasTransportGuidByte3,
+            MovementStatusElements.MSEHasVehicleId,
+            MovementStatusElements.MSEHasMoveIdx,
+            MovementStatusElements.MSEHasGuidByte7,
+            MovementStatusElements.MSEHasMovementFlags,
+            MovementStatusElements.MSEMovementFlags2,
+            MovementStatusElements.MSEHasSpline,
+            MovementStatusElements.MSEHasMoveTime,
+            MovementStatusElements.MSEHasGuidByte6,
+            MovementStatusElements.MSEMovementFlags,
+            MovementStatusElements.MSEHasFallData,
+            MovementStatusElements.MSEHasGuidByte5,
+            MovementStatusElements.MSEHasFallDirection,
+            MovementStatusElements.MSETransportTime,
+            MovementStatusElements.MSETransportGuidByte4,
+            MovementStatusElements.MSETransportPositionZ,
+            MovementStatusElements.MSETransportTime2,
+            MovementStatusElements.MSETransportGuidByte7,
+            MovementStatusElements.MSETransportGuidByte3,
+            MovementStatusElements.MSETransportGuidByte0,
+            MovementStatusElements.MSETransportPositionX,
+            MovementStatusElements.MSETransportOrientation,
+            MovementStatusElements.MSETransportGuidByte1,
+            MovementStatusElements.MSETransportGuidByte5,
+            MovementStatusElements.MSETransportGuidByte2,
+            MovementStatusElements.MSETransportSeat,
+            MovementStatusElements.MSETransportPositionY,
+            MovementStatusElements.MSETransportGuidByte6,
+            MovementStatusElements.MSETransportVehicleId,
+            MovementStatusElements.MSESplineElevation,
+            MovementStatusElements.MSEGuidByte2,
+            MovementStatusElements.MSEMoveIdx,
+            MovementStatusElements.MSEGuidByte3,
+            MovementStatusElements.MSEPositionY,
+            MovementStatusElements.MSEGuidByte0,
+            MovementStatusElements.MSEOrientation,
+            MovementStatusElements.MSEFallHorizontalSpeed,
+            MovementStatusElements.MSEFallSinAngle,
+            MovementStatusElements.MSEFallCosAngle,
+            MovementStatusElements.MSEFallTime,
+            MovementStatusElements.MSEFallVerticalSpeed,
+            MovementStatusElements.MSEGuidByte4,
+            MovementStatusElements.MSERemoveForcesIDs,
+            MovementStatusElements.MSEGuidByte1,
+            MovementStatusElements.MSEPositionX,
+            MovementStatusElements.MSEMoveTime,
+            MovementStatusElements.MSEGuidByte5,
+            MovementStatusElements.MSEGuidByte7,
+            MovementStatusElements.MSEGuidByte6,
+            MovementStatusElements.MSEPositionZ,
+            MovementStatusElements.MSEPitch,
 
             MovementStatusElements.MSEEnd
         };
